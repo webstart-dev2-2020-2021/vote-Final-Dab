@@ -6,6 +6,12 @@
       <router-link v-if="user.token" to="/logout"  @click.prevent="logout">Logout</router-link>
     <router-link v-if="!user.token" to="/login">Login</router-link>
   </div>
+    <div v-if="msg.error" class="text-danger">
+        {{ msg.error }}
+    </div>
+    <div v-if="msg.success" class="text-success">
+        {{ msg.success }}
+    </div>
   <router-view/>
 </template>
 
@@ -18,6 +24,9 @@ export default {
     computed: {
         ...mapGetters([
             'user'
+        ]),
+        ...mapGetters([
+            'msg'
         ])
     },
     methods: {

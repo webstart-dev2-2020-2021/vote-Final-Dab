@@ -1,4 +1,5 @@
 <template>
+
     <div class="w-25 m-auto" v-if="user.data.isAdmin">
         <form @submit.prevent="createNewVote(form)">
             <h1 class="h3 mb-3 fw-normal">Creer un vote</h1>
