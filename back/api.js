@@ -16,7 +16,7 @@ console.log(JWT_SECRET)
 
 mongoose.set('useCreateIndex', true)
 mongoose.set('useFindAndModify', false)
-mongoose.connect('mongodb+srv://thomaseyaa:gXFzt28Ir3tbJGMN@cluster0.mlko6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect('', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
